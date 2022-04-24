@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+}
+
+header {
+    height: 10vh;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 255, 0.678), rgba(0, 128, 0, 0.507));
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: black;
+}
+
+main {
+    height: 90vh;
+    background: linear-gradient(to left, rgba(0, 0, 255, 0.678), rgba(0, 128, 0, 0.507));
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.486);
+}
+
+form {
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    box-shadow: 0 0 1em rgb(0, 0, 0);
+    padding: 10px 30px;
+}
+
+form input {
+    width: 90%;
+    height: 50px;
+    background-color: transparent;
+    font-size: 1.1rem;
+    color: #fff;
+    outline-style: none;
+    border: none;
+    border-bottom: 1px solid green;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+input::placeholder {
+    background-color: transparent;
+    color: black;
+}
+
+/* Cor de fundo do autocomplete */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 255, 0.671) inset;
+    filter: saturate(1) hue-rotate(0deg);
+    height: 10%;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+/* Cor do texto do autocomplete */
+input:-webkit-autofill {
+    color: #fff;
+  }
+
+.fa-envelope {
+    position: absolute;
+    top: 27px;
+    left: 35px;
+    color: rgb(119, 0, 255);
+}
+
+.fa-lock {
+    position: absolute;
+    top: 96px;
+    left: 35px;
+    color: rgb(119, 0, 255);
+}
+
+.btn-inicio{
+    width: 97%;
+    padding: 8px 0;
+    background: linear-gradient(to right, rgba(0, 0, 255, 0.678), rgba(0, 128, 0, 0.507));
+    color: #fff;
+    font-size: 1.2rem;
+    outline-style: none;
+    border: none;
+    border-radius: 3px;
+    margin-bottom:  20px;
+    cursor: pointer;
+}
+
+form p {
+    line-height: 40px;
+    color: #fff;
+}
+
+form p a {
+    font-weight: bold;
+    color: black;
+}
+
+
+/* Paginas de boas vindas */
+
+
+.boas-vindas {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translate(-10%, -40%);
+    color: white;
+}
+
+.btn-voltar {
+    position: absolute;
+    left: 90%;
+    top: 15px;
+    width: 60px;
+    height: 25px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    outline-style: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn-voltar:hover {
+    background-color: #fff;
+    transition: 1s;
+}
+
+.btn-voltar a {
+    color: black;
+}
