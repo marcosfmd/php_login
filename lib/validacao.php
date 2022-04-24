@@ -1,31 +1,34 @@
-<!-- <?php
+<?php
 
     // Verificando se a variaveis POST login e senha existe
     if(isset($_POST['email']) && isset($_POST['password'])){
-        $login = 'email';
-        $password = 'password';
+        $login = htmlspecialchars($_POST['email']);
+        $password = htmlspecialchars($_POST['password']);
     }
 
     // Validando função para criptografar a senha
-        $senha = '123456';
-        if(md5($senha) === '21232f297a57a5a743894a0e4a801fc3'){
-        echo "senha correta";
-        exit;
-    } 
+    function criptografia () {
+        $senha = 'Dev2022';
 
-    // Validando se o login e senha estão correto
+        if(md5($senha) === 'c8063b4a4823f1c542487f67a2557d61') {
+            echo "Senha correta";
+        }else {
+        echo 'senha incorreta';
+        }
+    }
+    criptografia ();
+
+    // Validando se o login e senha estão correto e  Verificando se o login e senha estçao correto para redirecione  a pagina
     function validaLogin () {
         $loginOficial = 'admin';
-        $passOficial = '21232f297a57a5a743894a0e4a801fc3';
+        $passOficial = 'c8063b4a4823f1c542487f67a2557d61';
 
-        if ($loginOficial === 'admin' && $passOficial === '21232f297a57a5a743894a0e4a801fc3'){
-            header('Location: ./boas-vindas.php');
-            exit;
+        if ($loginOficial === 'admin' && $passOficial === 'c8063b4a4823f1c542487f67a2557d61'){
+             header('Location: boas-vindas.php');
         } else {
-            header('Location: ./ogin.php ?=error');
-            exit;
+            header('Location: login.php ?=error');
         }
     }
     validaLogin()
-?> -->
+?> 
   

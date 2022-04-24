@@ -11,7 +11,7 @@
 <body>
     <header>
         <a href="#" class="logo">Logo</a>
-        <button type="submit" class="btn-voltar"><a href="">Sair</a></button>
+        <button type="submit" class="btn-voltar"><a href="login.php">Sair</a></button>
     </header>
     <main>
         <h1 class="boas-vindas">Sejam Bem vindo </h1>  
@@ -21,5 +21,4 @@
 </body>
 </html>
 
-<!-- 
 

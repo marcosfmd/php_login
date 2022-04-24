@@ -1,34 +1,7 @@
 <?php
     include './lib/validacao.php'
-
-    /*
-    // Verificando se a variaveis POST login e senha existe
-    if(isset($_POST['email']) && isset($_POST['password'])){
-        $login = 'email';
-        $password = 'password';
-    }
-
-    // Validando função para criptografar a senha
-        $senha = '123456';
-        if(md5($senha) === '21232f297a57a5a743894a0e4a801fc3'){
-    } 
-
-    // Validando se o login e senha estão correto
-    function validaLogin () {
-        $loginOficial = 'admin';
-        $passOficial = '21232f297a57a5a743894a0e4a801fc3';
-
-        if ($loginOficial === 'admin' && $passOficial === '21232f297a57a5a743894a0e4a801fc3'){
-            header('Location: boas-vindas.php');
-        } else {
-            header('Location: login.php ?=error');
-            exit;
-        }
-    }
-    validaLogin()
-    */
-    
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
