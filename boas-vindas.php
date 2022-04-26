@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,7 +15,7 @@
         <button type="submit" class="btn-voltar"><a href="login.php">Sair</a></button>
     </header>
     <main>
-        <h1 class="boas-vindas">Sejam Bem vindo </h1>  
+        <h1 class="boas-vindas">Seja Bem vindo </h1>  
 
     </main>
     <script src="./assets/js/main.js"></script>

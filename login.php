@@ -1,5 +1,13 @@
 <?php
-    include './lib/validacao.php'
+    include './lib/validacao.php';
+
+    // Verificando se a variaveis POST login e senha existe
+    if(isset($_POST['user']) && isset($_POST['password'])){
+        $login = htmlspecialchars($_POST['user']);
+        $password = md5(htmlspecialchars($_POST['password']));
+        validaLogin($login, $password);
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -17,10 +25,10 @@
         <a href="#" class="logo">Logo</a>
     </header>
     <main>
-        <form action="boas-vindas.php" method="$_POST">
+        <form action="login.php" method="POST">
             <label for="e" class="e-mail">
                 <i class="fa-solid fa-envelope"></i>
-                <input type="email" id="e" name="email" placeholder="Digite seu email" maxlength="40" required>
+                <input type="text" id="e" name="user" placeholder="Digite seu login" maxlength="40" required>
             </label>
                 
             <label for="p" class="password">
@@ -34,6 +42,11 @@
             <p><a href="#"> Esqueci minha senha</a></a></p>
             <p> Não tem cadastro?<a href="#"> Cadastre-se</a></p>
         </form>
+        <?php
+            if (isset($_GET['validaLogin']) && $_GET['validaLogin'] === 'erro') {
+                echo "<h2> Login inexistente </h2>";
+            }
+        ?>
 
         <script src="./assets/js/main.js"></script>
     </main>

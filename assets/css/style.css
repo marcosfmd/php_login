@@ -150,3 +150,42 @@ form p a {
 .btn-voltar a {
     color: black;
 }
+
+
+/* Respondividade para mobile */
+@media (max-width: 480px) {
+    form {
+        width: 300px;
+    }
+
+    label input {
+        width: 180px;
+    }
+
+    button {
+        width: 253px;
+    }
+}
+
+/* Pequena animação */
+
+form {
+    overflow: hidden;
+    animation: slidein 1s;
+    animation-duration: 3s;
+
+}
+
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 50%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 32%;
+    }
+    
+  } 
